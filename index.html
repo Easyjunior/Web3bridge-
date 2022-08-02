@@ -1,79 +1,130 @@
 <!DOCTYPE html>
-<html lang="eng">
+<html>
 <head>
-       <meta charset UTF="8">
-       <meta http-equiv="X-UA-Compatible" content="IE=edge">
-       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       <title>Web2CVIIG2 First Assignment</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Order Summary</title>
 </head>
+<style=background-color:Aliceblue>
+<style type="text/css">
+  body {
+    font-family: Tahoma;
+  }
+  .container {
+    margin: 10px auto;
+    /*width: 100%;*/
+    max-width: 265px;
+    border-radius: 15px;
+    border: none;
+    padding: 0 0 20px 0;
+	background-color: azure;
+        
+}
+  }
+
+  .imageHeader {
+    margin: 0;
+    border-radius: 15px;
+   
+  }
+
+  .imageHeader img {
+    width: 100%;
+    height: 100px;
+    border-radius: 15px 15px 0 0;
+    background-color: blue;
+  }
+
+  .orderSummary {
+    text-align: center;
+    margin: 5px 20px;
+  }
+
+  .orderSummary p {
+    font-size: 13px;
+  }
+
+  .planSegment {
+    background-color: #eee;
+    margin: 5px 20px;
+    border-radius: 8px;
+    padding: 13px;
+    display: flex;
+    font-size: 12px;
+  }
+
+  .planSegment img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+
+  .paymentButton {
+    margin: 10px 10px 0px 10px;
+    
+  }
+
+  .paymentButton button {
+    background-color: blue;
+    color: white;
+    padding: 10px 30px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    box-shadow: 4px 8px lightgrey;
+  }
+
+  .orderButton {
+    margin: 5px 10px;
+  }
+
+  .orderButton button {
+    background-color: #eee;
+    color: darkgrey;
+    padding: 10px 30px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+  }
+  .card {
+  height: 100vh;}
+</style>
 <body>
-<p>
-        <h2><a href="./Contact.html">Contact Us</a></h2>
-        <h2><a href="./about Us.html">About Us</a></h2>
-        <h2><a href="./Login.html">Login here</a></h2>
- </p>
+        <div class="card">
+
+
+  <div class="container">
+    
+    <div class="imageHeader">
+      <img src="web.jpg" alt="donate pic">
+    </div>
+
+    <div class="orderSummary">
+      <h3>Order Summary</h3>
+      <p>You can now listen to milions of songs, audiobooks and podcasts on any device anywhere ou like!.</p>
+    </div>
+
+    <div class="planSegment">
+      <img src="music.png">
+      <span style="margin-left: 20px"><strong>Annual Plan</strong><br>$59.99/year</span>
+      <a href="#" style="margin-left: 60px;"><strong>Change</strong></a>
+    </div>
+
+    <div class="paymentButton">
+      <button>Proceed to Payment</button>
+    </div>
+
+    <div class="orderButton">
+      <button>Cancel Order</button>
+    </div>
+  </div>
+
  
-        <h1>Assignment</h1>
-        <h3>A list of 30 HTML tags and their respective functions</h3>
-        
-        
-        <ol>
-            <li><b>&lt;!DOCTYPE&gt;</b>The Doctype declaration defines that this document is an HTML5 document</li>
-            <li><b>&lt;html&gt;</b>It is the root of HTML document</li>
-            <li><b>&lt;head&gt;</b>It defines the head of an HTML document that contains non-visible data like metadata and other information</li>
-            <li><b>&lt;body&gt;</b>It defines the body of a webpage and contains everything that you see on the webpage</li>
-            <li><b>&lt;p&gt;</b>It defines the paragraph in a webpage</li>
-            <li><b>&lt;br&gt;</b>It defines a line break</li>
-            <li><b>&lt;hr&gt;</b>It creates a horizontal line in a webpage</li>
-            <li><b>&lt;b&gt;</b>It is used to define bold text </li>
-            <li><b>&lt;i&gt;</b>It formats text in italic form </li>
-            <li><b>&lt;u&gt;</b>It underlines the text </li>
-            <li><b>&lt;sup&gt;</b>It defines superscripted text</li>
-            <li><b>&lt;sub&gt;</b>It defines subscripted text</li>
-            <li><b>&lt;pre&gt;</b>It defines preformatted text</li>
-            <li><b>&lt;em&gt;</b>It represents stress emphasis on the text same as i tag</li>
-            <li><b>&lt;del&gt;</b>It is used to display the text that has been removed from the webpage </li>
-            <li><b>&lt;ins&gt;</b>It defines a word that has been inserted in the document. It underlines the word </li>
-            <li><b>&lt;mark&gt;</b>	It is used to highlight specific text </li>
-            <li><b>&lt;img&gt;</b>It defines image on webpage </li>
-            <li><b>&lt;figure&gt;</b>It defines a self-contained container for image, code snippets, diagrams, etc </li>
-            <li><b>&lt;thead&gt;</b>It groups the head content of the table </li>
-            <li><b>&lt;tbody&gt;</b>It groups the body content of the table </li>
-            <li><b>&lt;tfooter&gt;</b>It groups the footer content of the table </li>
-            <li><b>&lt;tr&gt;</b>It defines a row in the table</li>
-            <li><b>&lt;th&gt;</b>It defines a header cell in the table</li>
-            <li><b>&lt;td&gt;</b>It defines a cell in the table</li>
-            <li><b>&lt;div&gt;</b>It defines a group of elements within the HTML document </li>
-            <li><b>&lt;kbd&gt;</b> is used to display keyboard input on the screen. Browser display it by adding some default style to it.</li>
-            <li><b>&lt;blockquote&gt;</b>itindicates that the enclosed text is extended text from another source.</li>
-            <li><b>&lt;address&gt;</b>is used to display the contact or address of a person or an organization.</li>
-            <li><b>&lt;cite&gt;</b>describes a reference to a cited creative work or art. It must include the title of that work. </li>
-           
-           
-           
-           
-          <h3>B. What are my expectations? </h3>
-    <ol>
-         <li>To acquire knowledge about web development </li>
-         <li>To be able to face any difficulties in web space</li>
-         <li>To solve any real life problems </li>
-    </ol>
-    
-    
-    
-          <h3>C. What have I learnt so far</h3>   
-  <ol>
-      <li>Have learnt about the introduction of HTML</li>
-      <li>To start Html i have to make use of various app e.g vscode</li>
-      <li>I have to install my boilerplate for it to make it easier when coding </li>
-      <li>Linking of pages together with the help of anchor tag</li>
-           
-    </ol>
-        <h3>D. Examples of well placed Images </h3>
-        
-       <ol>
-    <li  <p><img src="fatai.png" alt="web" width="200"  height="150"></p></li>
-    <li><p><img src="Ade.png" alt="web" width="200"  height="150"></p></li>
-      <li><p><img src="red.png" alt="my picture"  width="200"  hieght="150"></p></li>
+
+        </div>
+
+
 </body>
 </html>
